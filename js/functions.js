@@ -11,7 +11,7 @@ function search() {
 			if(txt[k] === list[e][i]) {
 				if(list[e] not in result){
 					result.push(list[e])
-				}
+				};
 				e++
 			} else {
 				list.splice(e, 1)
