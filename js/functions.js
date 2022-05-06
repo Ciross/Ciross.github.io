@@ -9,17 +9,13 @@ function search() {
 		let e = 0
 		for(let z = 0; z < list.length; z++) {
 			if(txt[k] === list[e][i]) {
-				if(list[e] not in result){
-					result.push(list[e])
-				};
+				result.push(list[e])
 				e++
 			} else {
 				list.splice(e, 1)
 			};
 		};
 	};
-	if(result !== []) {
-		console.log(result)
-	};
-	return 'None'
+	console.log(result)
+	document.getElementById('body').innerHTML = `<p>RESULT: ${result}</p>`;
 };
