@@ -19,3 +19,20 @@ function search() {
 	console.log(result)
 	document.getElementById('body').innerHTML = `<p>RESULT: ${result}</p>`;
 };
+
+function research() {
+	const games = ["Zelda", "Sonic", "Mario", "COD", "Star wars", "Switch sports", "Elden ring", "Sony"]
+	let list = games;
+	let txt = document.getElementById('searchbar').value;
+	let result = [];
+	for(let i = 0; i < txt.length; i++) {
+		for(let k = 0; k < list.length; k++) {
+			if(txt[i] == list[k][i]) {
+				result.push(list[k])
+			} else {
+				list.splice(k, 1)
+			};
+		};
+	};
+	console.log(result)
+};
