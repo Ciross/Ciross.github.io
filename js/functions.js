@@ -17,26 +17,21 @@ function search() {
 		};
 	};
 	console.log(result)
-	document.getElementById('searchbar').innerHTML = `<p>RESULT: ${result}</p>`;
 };
 
+// Fonction search() retravaillée.
 function research() {
-	const games = ["Zelda", "Sonic", "Mario", "COD", "Star wars", "Switch sports", "Elden ring", "Sony"]
-	let list = games;
+	const games = ["Mario", "Zelda", "Sonic", "Pokemon", "Mario kart", "Mario Party", "Zelda Breath of the Wild", "Sonic the Hedgehog", "COD", "Star wars", "Switch sports", "Elden ring", "Sony"];
+	list = [];
 	let txt = document.getElementById('searchbar').value;
-	let result = [];
-	for(let i = 0; i < txt.length; i++) {
-		if(result) {
-			list = result;
-			result = [];
-		}
-		for(let k = 0; k < list.length; k++) {
-			if(txt[i] == list[k][i]) {
-				result.push(list[k])
-			} else {
-				list.splice(k, 1)
+	for(let i = 0; i < games.length; i++) {
+		let value = true;
+		for(let c = 0; c < txt.length; c++) {
+			if(txt[c] !== games[i][c]) {
+				value = false;
 			};
 		};
+		if(value) list.push(games[i]);
 	};
-	console.log(list)
+	document.getElementById('result').innerHTML = list.map(x => `<li>${x}</li>`).join('');
 };
