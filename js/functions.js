@@ -22,7 +22,8 @@ function search() {
 // Fonction search() retravaillée.
 function research() {
 	// Initialisation des jeux (pour l'instant manuel mais sera fait seul avec la db)
-	const games = ["Mario", "Zelda", "Sonic", "Pokemon", "Mario kart", "Mario Party", "Zelda Breath of the Wild", "Sonic the Hedgehog", "COD", "Star wars", "Switch sports", "Elden ring", "Sony"];
+	const games = ["Mario", "Zelda", "Sonic", "Pokemon", "Mario kart", "Mario Party", "Zelda Breath of the Wild", "Sonic the Hedgehog", "COD", "Star wars",
+		       "Switch sports", "Elden ring", "Sony"];
 	// Création d'une 2ème liste qui rendra notre résultat final
 	list = [];
 	// Récupération du texte dans la balise input
