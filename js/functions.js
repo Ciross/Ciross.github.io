@@ -9,7 +9,9 @@ function search() {
 		let e = 0
 		for(let z = 0; z < list.length; z++) {
 			if(txt[k] === list[e][i]) {
-				result.push(list[e])
+				if(list[e] not in result){
+					result.push(list[e])
+				}
 				e++
 			} else {
 				list.splice(e, 1)
