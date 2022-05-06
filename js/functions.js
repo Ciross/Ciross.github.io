@@ -17,7 +17,7 @@ function search() {
 		};
 	};
 	console.log(result)
-	document.getElementById('body').innerHTML = `<p>RESULT: ${result}</p>`;
+	document.getElementById('searchbar').innerHTML = `<p>RESULT: ${result}</p>`;
 };
 
 function research() {
@@ -26,6 +26,10 @@ function research() {
 	let txt = document.getElementById('searchbar').value;
 	let result = [];
 	for(let i = 0; i < txt.length; i++) {
+		if(result) {
+			list = result;
+			result = [];
+		}
 		for(let k = 0; k < list.length; k++) {
 			if(txt[i] == list[k][i]) {
 				result.push(list[k])
@@ -33,8 +37,6 @@ function research() {
 				list.splice(k, 1)
 			};
 		};
-		list = result;
-		result = [];
 	};
-	console.log(list)
+	console.log(result)
 };
