@@ -33,6 +33,8 @@ function research() {
 				list.splice(k, 1)
 			};
 		};
+		list = result;
+		result = [];
 	};
-	console.log(result)
+	console.log(list)
 };
