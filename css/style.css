@@ -39,6 +39,13 @@
     left: 0;
     z-index: -1;
 }
+
+.form {
+    background-color: #151515;
+    border: none;
+    color: #63CD42;
+}
+
 .scroll-left {
     margin: 0 auto;
     top: 0;
