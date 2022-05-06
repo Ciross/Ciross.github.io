@@ -58,3 +58,4 @@ function research() {
 };
 // La fonction peut paraître grosse comme ça, mais en vrai sans les commentaires elle fait 13 lignes.
 
+
