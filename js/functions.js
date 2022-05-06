@@ -38,5 +38,5 @@ function research() {
 			};
 		};
 	};
-	console.log(result)
+	console.log(list)
 };
