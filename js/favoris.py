@@ -9,5 +9,5 @@ def favoris():
 
 print(favoris())
 
-#Ici c'est genre un fct pour ajouter des jeux en favoris mais la partie input serai remplacer par des verif si une case est coché 
+#Ici c'est genre un fct pour ajouter des jeux en favoris mais la partie input puis le if qui suit serai remplacer par des verif si une case est coché 
 #(systeme de cases à cocher pour ajouter un jeu en fav sur le site)
