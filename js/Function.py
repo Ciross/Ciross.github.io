@@ -35,4 +35,8 @@ def sign_in():
     Profile["jeux favoris"] = jeux
     return Profile
 
-    
+    def log_in():
+        mail = input(f"Adresse Mail \n $:")
+        mdp = input(f"Mot de passe \n $:")
+        if 
+        
