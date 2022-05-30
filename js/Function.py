@@ -35,5 +35,4 @@ def sign_in():
     Profile["jeux favoris"] = jeux
     return Profile
 
-print(sign_in())
     
