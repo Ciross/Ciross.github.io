@@ -15,13 +15,13 @@ def sign_in():
     nom = input(f"Votre nom \n $:")
     prénom = input(f"Votre prénom \n $:")
     âge = int(input(f"Votre âge \n $:"))
+    if âge < 18:
+        return print("Les mineurs ne peuvent pas s'inscire")
     num = input(f"Votre numéro de téléphone \n $:")
     pays = input(f"Votre pays \n $:")
     adresse = input(f"Votre adresse \n $:")
     devise = input(f"Votre monnaie \n $:")
     jeux = favoris()
-    if âge < 18:
-        return print("Les mineurs ne peuvent pas s'inscire")
     Profile["Pseudo"] = pseudo
     Profile["Mail"] = mail
     Profile["Mot De Passe"] = mdp
