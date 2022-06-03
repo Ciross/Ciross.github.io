@@ -37,6 +37,7 @@
 .games {
     position: center;
     bottom: 300px;
+    up: 300;
     background-color: #151515;
     border: none;
     color: #63CD42;
