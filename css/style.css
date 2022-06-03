@@ -35,6 +35,8 @@
 
 
 .jeux {
+    position: relative;
+    bottom: 30px;
     background-color: #151515;
     border: none;
     color: #63CD42;
