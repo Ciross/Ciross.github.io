@@ -34,17 +34,6 @@
 }
 
 
-.games {
-    position: center;
-    bottom: 300px;
-    background-color: #151515;
-    border: none;
-    color: #63CD42;
-    float: left;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border: 1px solid black;
-
 }
 .image-stick-on-top {
     position: fixed;
